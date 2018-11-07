@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Corrections
+comment1.params=
+comment1.target=void\ main()
+comment2.params=num
+comment2.target=int\ digitsSum(int)
+comment2.text=\ Number\ 10\:\n\ \ \ \ public\ class\ Pumpkin{\n\ \ \ \ public\ int\ num;\n\ \ \ \ int\ x\ \=\ 0;\n\ \ \ \ public\ Pumpkin(int\ x){\n\ \ \ \ num\ \=\ x;\ \n\ \ \ \ }\n\ \ \ \ public\ void\ setnum(int\ num){\n\ \ \ \ num\ \=\ 7;\n\ \ \ \ }\n\ \ \ \ public\ int\ getnum(){\n\ \ \ \ return\ num;\ \n\ \ \ \ }\n\ \ \ \ }\n
+numComments=3
