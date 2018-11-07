@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=BallRunner
+comment0.text=\n\ Write\ a\ description\ of\ class\ BallRunner\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=void\ activity3()
+comment1.text=\n\n\ \ \ \ public\ static\ void\ activity2\ (){\n\ \ \ \ BallWorld\ ballWorld\ \=\ new\ BallWorld(400,400);\n\ \ \ \ TGPoint\ startPoint\ \=\ new\ TGPoint\ (0,0);\ \n\ \ \ \ //int\ startPoint\=\ 0;\n\ \ \ \ int\ startHeading\ \=\ (int)(Math.random()*360);\n\ \ \ \ int\ radius\ \=\ (int)(Math.random()*20+1);\n\ \ \ \ BallBot\ ballBot\ \=\ new\ BallBot\ (ballWorld,\ startPoint,\ startHeading,\ radius);\ \n\n\ \ \ \ BallBot[]\ ballBotArray\ \=\ new\ BallBot\ [10];\n\ \ \ \ BallRunner\ ballRunner\ \=\ new\ BallRunner\ ();\ \n\n\ \ \ \ while\ (1+1\=\=2){\n\ \ \ \ int\ freeBallBotIndex\ \=\ ballRunner.findFreeBallBotIndex(ballBotArray);\ \n\ \ \ \ if(freeBallBotIndex\ <\ ballBotArray.length)\ {\n\ \ \ \ ballBotArray[freeBallBotIndex]\ \=\ new\ BallBot\ (ballWorld,\ startPoint,\ startHeading,\ radius);\ \n\ \ \ \ }\n\n\ \ \ \ for\ (int\ index\ \=\ 0;\ index\ <\ ballBotArray.length;\ index++)\ {\n\ \ \ \ if\ (ballBotArray[index]\ \!\=\ null){\n\ \ \ \ if\ (ballBotArray[index].canMoveForward(ballWorld)\ \=\=\ true)\ {\n\ \ \ \ ballBotArray\ [index].moveForward();\n\ \ \ \ }else\ {\n\ \ \ \ startHeading\ \=\ (int)(Math.random()*360);\ \n\ \ \ \ ballBotArray[index].setHeading(startHeading);\n\ \ \ \ }\n\ \ \ \ }\n\ \ \ \ }\n\ \ \ \ }\n\ \ \ \ }\n\n\ \ \ \ public\ int\ findFreeBallBotIndex(BallBot\ []\ ballBotArray){\n\ \ \ \ boolean\ empty\ \=\ false;\ \n\ \ \ \ int\ x\ \=\ 0;\ \n\ \ \ \ for\ (int\ i\ \=\ 0;\ i<ballBotArray.length\ &&\ empty\=\=\ false;\ i++)\ {\n\ \ \ \ if\ (ballBotArray\ [i]\ \=\=\ null){\ \n\ \ \ \ empty\ \=\ true;\ \n\ \ \ \ x\ \=\ i;\ \n\ \ \ \ }\n\ \ \ \ }\n\ \ \ \ if\ (empty\ \=\=\ true){\n\ \ \ \ return\ x;\ \n\ \ \ \ }\ else\ {\ \n\ \ \ \ return\ ballBotArray.length;\ \ \ \ \n\ \ \ \ }\n\n\ \ \ \ }\n
+comment2.params=ballBotArray
+comment2.target=int\ findFreeBallBotIndex(BallBot[])
+comment3.params=point1\ point2
+comment3.target=double\ distanceBetweenPoints(TGPoint,\ TGPoint)
+comment4.params=ballBotArray\ entrancePoint
+comment4.target=boolean\ entranceClear(BallBot[],\ TGPoint)
+comment5.params=
+comment5.target=void\ activity4()
+comment6.params=ballBot\ ballBotArray
+comment6.target=BallBot\ ballBotToBounceOff(BallBot,\ BallBot[])
+numComments=7
