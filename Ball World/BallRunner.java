@@ -6,7 +6,7 @@
  * @version (a version number or a date)
  */
 public class BallRunner
-{
+{ 
     /*  // 
     // create static method to 'run' activity 1 
 
