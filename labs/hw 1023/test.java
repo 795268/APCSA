@@ -5,7 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class test
+public class test 
 {
     //1
     public static String go(int x) {
