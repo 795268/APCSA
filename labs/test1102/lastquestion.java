@@ -2,8 +2,8 @@
 /**
  * Write a description of class magpie here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Elena Campell)
+ * @version (last question from test)
  */
 
 import java.util.ArrayList; 
