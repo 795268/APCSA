@@ -10,6 +10,7 @@ public class Game
     public Game(){
         Deck deck = new Deck(); // new deck object 
         Hand hand = new Hand(deck); //new hand
-   
-}
+
+    }
+
 }
