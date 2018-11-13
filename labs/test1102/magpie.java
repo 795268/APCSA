@@ -11,7 +11,8 @@ import java.lang.Math;
 
 public class magpie
 {
-    private String transformILike(String str){
+
+     public String transformILike(String str){
 	
 	    ArrayList <String> strings;
 	    strings = new ArrayList <String>(); 
@@ -27,9 +28,10 @@ public class magpie
 	    
 	    if (str.substring(0,5).equals(statement) && lastChar.equals(".")){
 	        String subject = str.substring(str.indexOf(statement) +1, str.indexOf(lastChar)); 
+
 	        
 	       }
-	       System.out.println (strings.get(Math.random()*100) + subject + "?");
+	       return (strings.get((int)Math.random()*100) + subject + "?");
 	       
 	   
 	    
@@ -38,7 +40,7 @@ public class magpie
 	    
 	    
 	   }
-	   
+	 
 }
 	    
 /*

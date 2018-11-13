@@ -2,4 +2,12 @@
 comment0.target=GridTester
 comment1.params=
 comment1.target=void\ loadArray()
-numComments=2
+comment2.params=testArray
+comment2.target=int\ sumAll(int[])
+comment3.params=testArray
+comment3.target=int\ findGreatest(int[])
+comment4.params=testArray
+comment4.target=int\ numberOfGreatest(int[])
+comment5.params=testArray
+comment5.target=int\ findAvg(int[])
+numComments=6
