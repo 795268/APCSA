@@ -118,7 +118,7 @@ public class StudListRunner
                     int number = command61.nextInt();
                     if(countDigits(number) == 6) {
                         //figure out how to actually print 
-                        studlist.printsStudent(int number, String last, String name, double gpa); 
+                        //studlist.printsStudent(int number, String last, String name, double gpa); 
                     } else {
                         tryAgain();
                     }
@@ -126,7 +126,7 @@ public class StudListRunner
                     Scanner command62 = new Scanner(System.in);
                     System.out.print("Enter student last name.");
                     String last = command62.nextLine();
-                    studlist.printStudent();
+                   // studlist.printStudent();
                 } else {
                     tryAgain();
                 }
