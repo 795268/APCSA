@@ -11,7 +11,7 @@ public class PictureTester
     /** Method to test zeroBlue */
     public static void testZeroBlue()
     {
-        Picture beach = new Picture("beach.jpg");
+        Picture beach = new Picture("HOTdog.jpg");
         beach.explore();
         beach.zeroBlue();
         beach.explore();
@@ -108,6 +108,14 @@ public class PictureTester
     {
         Picture canvas = new Picture("640x480.jpg");
         canvas.createCollage();
+        canvas.explore();
+    }
+    
+    /** Method to test the collage method */
+    public static void testmyCollage()
+    {
+        Picture canvas = new Picture("640x480.jpg");
+        canvas.myCollage();
         canvas.explore();
     }
 

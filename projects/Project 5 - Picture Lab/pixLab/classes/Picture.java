@@ -273,7 +273,6 @@ public class Picture extends SimplePicture
         }
     }
 
-    
     /** copy from the passed fromPic to the
      * specified startRow and startCol in the
      * current picture
@@ -305,7 +304,7 @@ public class Picture extends SimplePicture
         }   
     }
 
-        public void copy2(Picture fromPic, 
+    public void copy2(Picture fromPic, 
     int startRow, int endRow, int startCol, int endCol)
     {
         Pixel fromPixel = null;
@@ -321,8 +320,7 @@ public class Picture extends SimplePicture
             }
         }   
     }
-    
-    
+
     /** Method to create a collage of several pictures */
     public void createCollage()
     {
@@ -340,31 +338,63 @@ public class Picture extends SimplePicture
         this.write("collage.jpg");
     }
 
+    /** Method to create a collage of several pictures */
+    public void myCollage()
+    {
+        Picture koala = new Picture("chip.jpg");
+        Picture barbara = new Picture("HOTdog.jpg");
+        this.copy(koala,0, 0 );
+        this.copy(barbara,200,0);
+        this.copy(koala,200,0);
+        Picture barbaraNoBlue = new Picture(barbara);
+        barbaraNoBlue.zeroBlue();
+        this.copy(barbaraNoBlue,300,0);
+        this.copy(koala,400,0);
+        this.copy(barbara,500,0);
+        this.mirrorVertical();
+        this.write("collage.jpg");
+    }
+
     /** Method to show large changes in color 
      * @param edgeDist the distance for finding edges
      */
     public void edgeDetection(int edgeDist)
-    {
+   {
+       //variables for top, bottom, left, right 
         Pixel leftPixel = null;
         Pixel rightPixel = null;
+        Pixel topPixel = null;
+        Pixel bottomPixel = null;
+        //variabels for pixel array 
         Pixel[][] pixels = this.getPixels2D();
+        //variables for right and bottom color 
         Color rightColor = null;
+        Color bottomColor = null; 
+        //nested for loop 
         for (int row = 0; row < pixels.length; row++)
         {
-            for (int col = 0; 
-            col < pixels[0].length-1; col++)
+            for (int col = 0; col < pixels[0].length-1; col++)
             {
+                //find each edge by setting left right top and bottom to their row& column
                 leftPixel = pixels[row][col];
                 rightPixel = pixels[row][col+1];
                 rightColor = rightPixel.getColor();
-                if (leftPixel.colorDistance(rightColor) > 
-                edgeDist)
+                topPixel = pixels[row][col];
+                bottomPixel = pixels[row][col+1];
+                bottomColor = bottomPixel.getColor();
+                if (leftPixel.colorDistance(rightColor) > edgeDist || topPixel.colorDistance(bottomColor) > edgeDist  ) {
                     leftPixel.setColor(Color.BLACK);
-                else
-                    leftPixel.setColor(Color.WHITE);
+                topPixel.setColor(Color.BLACK);
+
+            }else{
+                leftPixel.setColor(Color.WHITE);
+                topPixel.setColor(Color.WHITE);
+
             }
         }
+
     }
+}
 
     public void Negate(){ //method to negate all colors 
         Pixel[][] pixels = this.getPixels2D();
@@ -409,7 +439,6 @@ public class Picture extends SimplePicture
                 }
             }
 
-        
         }
     }
 
