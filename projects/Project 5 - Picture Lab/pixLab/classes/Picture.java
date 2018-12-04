@@ -395,6 +395,23 @@ public class Picture extends SimplePicture
 
     }
 }
+/**
+ *  my method for edge detection
+ */
+    public void myedgeDetection(int edgeDist){
+        // top, bottom, right, left 
+        
+        Pixel top = null;
+        Pixel bottom = null;
+        Pixel left = null;
+        Pixel right = null;
+        //variabels for pixel array 
+        Pixel[][] pixels = this.getPixels2D();
+        //variables for right and bottom color 
+        Color rightColor = null;
+        Color bottomColor = null; 
+        
+    }
 
     public void Negate(){ //method to negate all colors 
         Pixel[][] pixels = this.getPixels2D();
