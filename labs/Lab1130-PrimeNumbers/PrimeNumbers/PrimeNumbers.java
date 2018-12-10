@@ -10,36 +10,32 @@ import java.util.ArrayList;
 
 public class PrimeNumbers
 {
-    /*
-     * hat will take an integer as an input
-     * and put each of the digits into an ArrayList of Integer objects.  
-
-     */
-      ArrayList<Integer> numbers = new ArrayList<Integer>();
+    ArrayList<Integer> numbers = new ArrayList<Integer>();
+    
+     //takes an integer as an input
+     // put each of the digits into an ArrayList of Integer objects.  
     public void setListtoNumber (int n) { 
         while(n > 0) {
             numbers.add(0, n % 10);
             n = n / 10;
+        }
     }
-}
-
-    /*
-     * that will take an integer and 
-     * add it to an existing ArrayList of Integer objects. 
-     */
+    
+     //adds integer to an existing ArrayList of Integer objects.
     public void addNumberToList (int n) {
         for(int i = 0; i < numbers.size(); i++) {
             if(n > 0) {
-        
-    }
-}}
-    /*
-     * hat will take an integer and 
-     * add it to an existing ArrayList of Integer objects. 
+                int swtich = numbers.size() -1 -i;
+                numbers.set(swtich, numbers.get(swtich) + n % 10);
+                n = n /10;
+            }
 
-     */
+            }
+        }
+   
+     // adds integer to an existing ArrayList of Integer objects. 
     public void addNumbers (ArrayList<Integer> n1, ArrayList<Integer> n2){
-        
+
     }
-    
+
 }
