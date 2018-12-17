@@ -128,13 +128,13 @@ public class Review
     //FR2
     public int adjustMaxMin(ArrayList<Integer> levels, int maxLevel){
         int change = 0; 
-        for (int i = 0; i> levels.size(); i++){
+        for (int i = 0; i < levels.size(); i++){
             if ( levels.get(i) > maxLevel){
-                levels.set(maxLevel, i);
-                change += 1; 
+                levels.set(i,maxLevel);
+                change ++; 
             } else if (levels.get(i) < -maxLevel) {
                 levels.set(-maxLevel, i);
-                change +=1; 
+                change ++; 
             }
         }
         return change; 
@@ -150,24 +150,24 @@ public class Review
                 "maybe", 
                 "perhaps", 
                 "It remains to be seen" };
-        String response = randStrings [(int)(Math.random() * 5)]; 
+        String response = randStrings [(int)(Math.random() * (randStrings.length))]; 
         //String response = getRandomResponse(randStrings);
         System.out.println(response); 
-
     }
 
     public static void loadNums(){
         int[][] nums = new  int[10][10];
         int numEven = 0; 
-        for( int r =0; r> nums.length; r++){
-            for( int c =0; c> nums[0].length; c++) {
+        for( int r =0; r< nums.length; r++){
+            for( int c =0; c< nums[0].length; c++) {
                 nums [r][c] = (int)((Math.random() * 10) +1); 
-                if (nums[r][c] % 2 = 0){
-                    numEven += 1;  
+                if (nums[r][c] % 2 == 0){
+                    numEven ++;  
                 }
             }
         }
         System.out.println (numEven); 
     }
+    
 }
 
