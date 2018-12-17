@@ -5,11 +5,11 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Itone
+public class Problem23
 {
     private int x = 78; 
 
-    public Itone () {
+    public Problem23 () {
         x=99;
     }
    
@@ -19,7 +19,7 @@ public class Itone
 
   
     public static void main () {
-        Itone anIt = new Itone();
-        System.out.println(anIt); 
+        Problem23 it = new Problem23();
+        System.out.println(it); 
     }
 }

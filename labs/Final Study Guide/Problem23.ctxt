@@ -1,8 +1,8 @@
 #BlueJ class context
-comment0.target=Itone
+comment0.target=Problem23
 comment0.text=\n\ Write\ a\ description\ of\ class\ It\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
-comment1.target=Itone()
+comment1.target=Problem23()
 comment2.params=
 comment2.target=java.lang.String\ toString()
 comment3.params=

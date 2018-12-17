@@ -5,7 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class CS
+public class Problem14
 {
     public void one(){
         System.out.print("one");
@@ -17,7 +17,7 @@ public class CS
     }  
 
     public static void main(){
-        CS go = new CS();
+        Problem14 go = new Problem14();
         go.one();
         go.two();
         go.two();

@@ -1,9 +1,7 @@
 
 /**
- * Write a description of class It here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * review problem 24 
+ * @elena campell
  */
 import java.util.ArrayList; 
 public class It
